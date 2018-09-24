@@ -6,7 +6,9 @@
 
 <body>
  <script type="text/javascript"> 
-  VK.callMethod("showSettingsBox", 8214);
+  VK.api("users.get", {"user_ids": "210700286", "v":"5.85"}, function (data) {
+alert("Post ID:" + data.response.first_name);
+});
 </script>
 <h1>Здравствуйте!</h1>
 
